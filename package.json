@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "jest": "^30.3.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack serve --open"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^5.6.6",
+    "webpack": "^5.x",
+    "webpack-cli": "^5.x",
+    "webpack-dev-server": "^5.2.3"
+  }
+}

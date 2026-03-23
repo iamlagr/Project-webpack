@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Investimento em Moeda Estrangeira</title>
+    <link rel="stylesheet" href="exercicio-10.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Cálculo de Investimento</h1>
+        
+        <div class="input-group">
+            <label for="valorInvestido">Valor Investido (Moeda Estrangeira): *</label>
+            <input type="number" id="valorInvestido" placeholder="Ex: 1000" step="any" required>
+        </div>
+
+        <div class="input-group">
+            <label for="taxaAtual">Taxa de Câmbio Atual (R$): *</label>
+            <input type="number" id="taxaAtual" placeholder="Ex: 5.10" step="any" required>
+        </div>
+
+        <div class="input-group">
+            <label for="taxaCompra">Taxa de Câmbio na Compra (R$) [Opcional]:</label>
+            <input type="number" id="taxaCompra" placeholder="Ex: 4.90" step="any">
+            <small>Preencha para calcular lucro/prejuízo e rentabilidade.</small>
+        </div>
+
+        <button id="btnCalcular">Calcular Investimento</button>
+
+        <div class="resultado-container" id="areaResultado" style="display: none;">
+            <h2>Resultados:</h2>
+            <p><strong>Valor Investido:</strong> $<span id="resValorInvestido">0.00</span></p>
+            <p><strong>Taxa Utilizada:</strong> R$ <span id="resTaxaAtual">0.00</span></p>
+            <p class="destaque"><strong>Equivalente em Reais:</strong> R$ <span id="resValorReais">0.00</span></p>
+            
+            <div id="resultadoDesafio" style="display: none; margin-top: 15px; border-top: 1px dashed #ccc; padding-top: 10px;">
+                <p><strong>Lucro/Prejuízo:</strong> R$ <span id="resLucroPrejuizo">0.00</span></p>
+                <p><strong>Rentabilidade:</strong> <span id="resRentabilidade">0.00</span>%</p>
+            </div>
+        </div>
+    </main>
+
+    <script src="exercicio-10.js"></script>
+</body>
+</html>
