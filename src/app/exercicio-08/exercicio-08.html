@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Temperatura</title>
+    <link rel="stylesheet" href="exercicio-08.css">
+</head>
+<body>
+    <main class="container">
+        <h1>Conversor de Temperatura</h1>
+        
+        <div class="input-group">
+            <label for="valorTemperatura">Digite a temperatura:</label>
+            <input type="number" id="valorTemperatura" placeholder="Ex: 25" step="any">
+        </div>
+
+        <div class="input-group">
+            <label for="tipoConversao">Escolha a conversão:</label>
+            <select id="tipoConversao">
+                <option value="celsiusParaKelvin">Celsius → Kelvin</option>
+                <option value="kelvinParaCelsius">Kelvin → Celsius</option>
+            </select>
+        </div>
+
+        <button id="botaoConverter">Converter</button>
+
+        <div class="resultado-container">
+            <h2>Resultado:</h2>
+            <p id="resultado">---</p>
+        </div>
+    </main>
+
+    <script src="exercicio-08.js"></script>
+</body>
+</html>
