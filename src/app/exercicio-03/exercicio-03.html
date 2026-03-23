@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Viagem</title>
+    <link rel="stylesheet" href="exercicio-03.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Custo de Viagem</h2>
+        <input type="number" id="distancia" placeholder="Distância total (km)">
+        <input type="number" id="consumo" placeholder="Consumo Médio (km/L)" step="0.1">
+        <input type="number" id="precoLitro" placeholder="Preço do Litro (R$)" step="0.01">
+        
+        <button onclick="realizarCalculoViagem()">Calcular Custo</button>
+
+        <div id="resultado" class="resultado-area"></div>
+    </div>
+    <script src="exercicio-03.js"></script>
+</body>
+</html>
